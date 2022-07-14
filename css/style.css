@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: rgb(113, 255, 202);
+}
+
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    margin: 100px auto 0px;
+    align-content: flex-start;
+}
+
+.square{
+    border: solid 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clicked{
+    background-color: lightblue;
+}
+
