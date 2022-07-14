@@ -78,13 +78,16 @@ generatePlayground();
                     currentElement.classList.add('safe');
                 gridDom.appendChild(currentElement);
                 }
+
+                
         }
 
 
-        document.getElementByClassName('bomb').addEventListener('click', function () {
+        /*document.getElementByClassName('bomb').addEventListener('click', function () {
             alert('Game Over');
+           
         }
-        );
+        ); */
     }
 
     function createGridSquare(numero, cellPerSide) {
@@ -101,4 +104,5 @@ generatePlayground();
 
 function generateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
+
 }
