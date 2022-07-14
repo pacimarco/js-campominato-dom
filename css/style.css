@@ -8,6 +8,22 @@ html{
     background-color: rgb(113, 255, 202);
 }
 
+header{
+    padding: 30px;
+}
+
+label{
+    color: blueviolet;
+    margin-right: 5%;
+}
+
+#play{
+    color: blueviolet;
+    margin-left: 5%;
+    border-radius: 5px;
+    padding: 2px;
+
+}
 #grid{
     display: flex;
     flex-wrap: wrap;
@@ -27,4 +43,7 @@ html{
 .clicked{
     background-color: lightblue;
 }
-
+.bomb{
+    /*background-color: red;*/
+    
+}

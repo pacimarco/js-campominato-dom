@@ -4,7 +4,7 @@ cellTotal = 100;
 let bombsNumber = 16;
 let numbers =[];
 
-for (let i = 0; i < bombsNumber; i++) {
+for (let i = 1; i < bombsNumber; i++) {
     let newRandomNumber = generateRandomNumber(1, cellTotal);
     console.log(i, newRandomNumber);
 
@@ -71,6 +71,7 @@ generatePlayground();
                 if (numbers.includes(i)) {
                     console.log('Cella con bomba' +i);
                     currentElement.classList.add('bomb');
+                    gridDom.appendChild(currentElement);
                 }
                 else{
                     console.log('cella' + i);
@@ -78,6 +79,12 @@ generatePlayground();
                 gridDom.appendChild(currentElement);
                 }
         }
+
+
+        document.getElementByClassName('bomb').addEventListener('click', function () {
+            alert('Game Over');
+        }
+        );
     }
 
     function createGridSquare(numero, cellPerSide) {
